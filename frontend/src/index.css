@@ -17,7 +17,6 @@
 body {
   font-family: Quicksand;
   color: var(--secondary);
-
 }
 
 p {
@@ -61,6 +60,8 @@ a {
 
 /* Blog Details */
 .blogDetails {
+  display: flex;
+  justify-content: space-between;
   border-radius: 4px;
   max-width: 1200px;
   margin: 15px auto;
@@ -68,13 +69,22 @@ a {
   box-shadow: 5px 8px 10px rgba(0,0,0,0.05);
 }
 
-.blogDetails h3 {
+.blogContainer h3 {
   color: var(--primary);
   padding-bottom: 5px;
 }
 
-.blogDetails span {
+.blogContainer span {
   color: var(--primary);
+}
+
+.delete p {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  padding: 6px;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #333;
 }
 
 /* Blog Form */
@@ -116,6 +126,16 @@ a {
 
 .error {
   color: var(--error);
-  margin-top: 10px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--error);
+  background: #ffefef;
 }
+
+.inputError {
+  border: 1px solid var(--error);
+}
+
+
 
