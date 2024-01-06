@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* layout */
+:root {
+  --primary: #f1356d;
+  --secondary: #333;
+  --error: #e7195a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Quicksand;
+  background: #fff;
+  color: var(--secondary);
+
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.navTitle h1 {
+  color: var(--primary);
+}
+
+.navMenu a {
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navMenu a:hover {
+  color: var(--primary)
+}
+
+/* Home */
+.blogs {
+  padding-top: 20px;
+
+}
+
+/* Blog Details */
+.blogDetails {
+  border-radius: 4px;
+  max-width: 1200px;
+  margin: 15px auto;
+  padding: 10px 0;
+  box-shadow: 5px 8px 10px rgba(0,0,0,0.05);
+}
+
+.blogDetails h3 {
+  color: var(--primary);
+  padding-bottom: 5px;
+}
+
+.blogDetails span {
+  color: var(--primary);
+}
+
