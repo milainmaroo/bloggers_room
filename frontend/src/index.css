@@ -16,7 +16,6 @@
 
 body {
   font-family: Quicksand;
-  background: #fff;
   color: var(--secondary);
 
 }
@@ -76,5 +75,47 @@ a {
 
 .blogDetails span {
   color: var(--primary);
+}
+
+/* Blog Form */
+.blogForm {
+  max-width: 400px;
+  margin: 15px auto;
+}
+
+.blogForm h2 {
+  color: var(--primary);
+  text-align: center;
+  margin: 20px 0;
+}
+
+.blogForm label {
+  display: block;
+  margin-bottom: 10px;;
+}
+
+.blogForm input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+}
+
+.blogForm input[name='body'] {
+  height: 60px;
+}
+
+.blogForm button {
+  padding: 8px 14px;
+  background-color: var(--primary);
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.error {
+  color: var(--error);
+  margin-top: 10px;
 }
 
